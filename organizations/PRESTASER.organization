@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="PRESTASER" description="Empresa prestadora de serviços de informática">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="miguel.administrativo">
+      <firstName>Miguel</firstName>
+      <lastName>Administrativo</lastName>
+      <title></title>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>miguel.administrativo@prestaser.com</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="rute.gconta">
+      <firstName>Rute</firstName>
+      <lastName>GConta</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>rute.gconta@prestaser.com</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cesar.gservico">
+      <firstName>Cesar</firstName>
+      <lastName>GServico</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>cesar.gservico@prestaser.com</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="maria.tecnico">
+      <firstName>Maria</firstName>
+      <lastName>Tecnico</lastName>
+      <manager>rute.gconta</manager>
+      <personalData/>
+      <professionalData>
+        <email>maria.tecnico@prestaser.com</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jorge.tecnico">
+      <firstName>Jorge</firstName>
+      <lastName>Tecnico</lastName>
+      <manager>rute.gconta</manager>
+      <personalData/>
+      <professionalData>
+        <email>jorge.tecnico@prestaser.com</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="GestoresConta">
+      <displayName>Gestores De Conta</displayName>
+    </group>
+    <group name="GestoresServico">
+      <displayName>Gestores De Serviço</displayName>
+    </group>
+    <group name="Tecnicos">
+      <displayName>Técnicos</displayName>
+    </group>
+    <group name="Administrativos">
+      <displayName>Administrativos</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>miguel.administrativo</userName>
+      <roleName>Member</roleName>
+      <groupName>Administrativos</groupName>
+    </membership>
+    <membership>
+      <userName>rute.gconta</userName>
+      <roleName>Member</roleName>
+      <groupName>GestoresConta</groupName>
+    </membership>
+    <membership>
+      <userName>cesar.gservico</userName>
+      <roleName>Member</roleName>
+      <groupName>GestoresServico</groupName>
+    </membership>
+    <membership>
+      <userName>maria.tecnico</userName>
+      <roleName>Member</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+    <membership>
+      <userName>jorge.tecnico</userName>
+      <roleName>Member</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
