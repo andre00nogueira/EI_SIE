@@ -1,60 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="PRESTASER" description="Empresa prestadora de serviços de informática">
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="PRESTASER">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="miguel.administrativo">
+    <user userName="miguel.administrator">
       <firstName>Miguel</firstName>
-      <lastName>Administrativo</lastName>
-      <title></title>
+      <lastName>Administrator</lastName>
       <manager></manager>
       <personalData/>
       <professionalData>
-        <email>miguel.administrativo@prestaser.com</email>
-      </professionalData>
-      <password encrypted="false">123</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="rute.gconta">
-      <firstName>Rute</firstName>
-      <lastName>GConta</lastName>
-      <manager></manager>
-      <personalData/>
-      <professionalData>
-        <email>rute.gconta@prestaser.com</email>
+        <email>miguel.administrator@prestaser.com</email>
       </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
     <user userName="cesar.gservico">
-      <firstName>Cesar</firstName>
+      <firstName>César</firstName>
       <lastName>GServico</lastName>
       <manager></manager>
       <personalData/>
-      <professionalData>
-        <email>cesar.gservico@prestaser.com</email>
-      </professionalData>
-      <password encrypted="false">123</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="maria.tecnico">
-      <firstName>Maria</firstName>
-      <lastName>Tecnico</lastName>
-      <manager>rute.gconta</manager>
-      <personalData/>
-      <professionalData>
-        <email>maria.tecnico@prestaser.com</email>
-      </professionalData>
-      <password encrypted="false">123</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="jorge.tecnico">
-      <firstName>Jorge</firstName>
-      <lastName>Tecnico</lastName>
-      <manager>rute.gconta</manager>
-      <personalData/>
-      <professionalData>
-        <email>jorge.tecnico@prestaser.com</email>
-      </professionalData>
+      <professionalData/>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
@@ -65,44 +29,23 @@
     </role>
   </roles>
   <groups>
-    <group name="GestoresConta">
-      <displayName>Gestores De Conta</displayName>
+    <group name="Administrador">
+      <displayName>Administrador</displayName>
     </group>
-    <group name="GestoresServico">
-      <displayName>Gestores De Serviço</displayName>
-    </group>
-    <group name="Tecnicos">
-      <displayName>Técnicos</displayName>
-    </group>
-    <group name="Administrativos">
-      <displayName>Administrativos</displayName>
+    <group name="GestorServico">
+      <displayName>Gestor de Servico</displayName>
     </group>
   </groups>
   <memberships>
     <membership>
-      <userName>miguel.administrativo</userName>
+      <userName>miguel.administrator</userName>
       <roleName>Member</roleName>
-      <groupName>Administrativos</groupName>
-    </membership>
-    <membership>
-      <userName>rute.gconta</userName>
-      <roleName>Member</roleName>
-      <groupName>GestoresConta</groupName>
+      <groupName>Administrador</groupName>
     </membership>
     <membership>
       <userName>cesar.gservico</userName>
       <roleName>Member</roleName>
-      <groupName>GestoresServico</groupName>
-    </membership>
-    <membership>
-      <userName>maria.tecnico</userName>
-      <roleName>Member</roleName>
-      <groupName>Tecnicos</groupName>
-    </membership>
-    <membership>
-      <userName>jorge.tecnico</userName>
-      <roleName>Member</roleName>
-      <groupName>Tecnicos</groupName>
+      <groupName>GestorServico</groupName>
     </membership>
   </memberships>
 </organization:Organization>

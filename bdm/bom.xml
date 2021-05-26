@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.12.1">
     <businessObjects>
-        <businessObject qualifiedName="com.company.model.BusinessObject">
+        <businessObject qualifiedName="com.prestaser.model.Client">
+            <description>Cliente salesforce</description>
             <fields>
-                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clientId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.prestaser.model.Contract">
+            <fields>
+                <field type="STRING" length="255" name="contractNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clientId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="statusCode" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.prestaser.model.Interventions">
+            <fields>
+                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="interventionDate" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.prestaser.model.Request">
+            <fields>
+                <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.prestaser.model.Client" fetchType="LAZY" name="client" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="requestDate" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.prestaser.model.Interventions" fetchType="EAGER" name="interventions" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="technician" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
