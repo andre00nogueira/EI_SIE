@@ -12,58 +12,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_tbi4Qr44Eeuk4pNB4Zwu1A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_tbi4Q744Eeuk4pNB4Zwu1A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_tbi4RL44Eeuk4pNB4Zwu1A" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_tbi4Rb44Eeuk4pNB4Zwu1A" documentation="Gets all client accounts from salesforce CRM" name="salesforceGetClientAccounts" definitionId="salesforce-querysobjects" event="ON_ENTER" definitionVersion="1.0.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_tbi4Rr44Eeuk4pNB4Zwu1A" definitionId="salesforce-querysobjects" version="1.0.1" modelVersion="7.12.0-004">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4R744Eeuk4pNB4Zwu1A" key="username">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4SL44Eeuk4pNB4Zwu1A" name="andre@ipl.com" content="andre@ipl.com" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Sb44Eeuk4pNB4Zwu1A" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Sr44Eeuk4pNB4Zwu1A" name="janela2012" content="janela2012" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4S744Eeuk4pNB4Zwu1A" key="securityToken">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4TL44Eeuk4pNB4Zwu1A" name="78HnE36tf0FEPzNFPjz7OEe2" content="78HnE36tf0FEPzNFPjz7OEe2" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Tb44Eeuk4pNB4Zwu1A" key="authEndpoint">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Tr44Eeuk4pNB4Zwu1A" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4T744Eeuk4pNB4Zwu1A" key="serviceEndpoint">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4UL44Eeuk4pNB4Zwu1A" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Ub44Eeuk4pNB4Zwu1A" key="restEndpoint">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Ur44Eeuk4pNB4Zwu1A" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4U744Eeuk4pNB4Zwu1A" key="proxyHost">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4VL44Eeuk4pNB4Zwu1A" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Vb44Eeuk4pNB4Zwu1A" key="proxyPort">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Vr44Eeuk4pNB4Zwu1A" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4V744Eeuk4pNB4Zwu1A" key="proxyUsername">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4WL44Eeuk4pNB4Zwu1A" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Wb44Eeuk4pNB4Zwu1A" key="proxyPassword">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Wr44Eeuk4pNB4Zwu1A" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4W744Eeuk4pNB4Zwu1A" key="connectionTimeout">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4XL44Eeuk4pNB4Zwu1A" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4Xb44Eeuk4pNB4Zwu1A" key="readTimeout">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4Xr44Eeuk4pNB4Zwu1A" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_tbi4X744Eeuk4pNB4Zwu1A" key="query">
-                <expression xmi:type="expression:Expression" xmi:id="_tbi4YL44Eeuk4pNB4Zwu1A" name="&lt;pattern-expression>" content="SELECT Name, Id FROM ACCOUNT" type="TYPE_PATTERN" returnTypeFixed="true"/>
-              </parameters>
-            </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_tbi4Yb44Eeuk4pNB4Zwu1A">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_tbi4Yr44Eeuk4pNB4Zwu1A" name="clients" content="clients" type="TYPE_VARIABLE" returnType="java.util.List">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tbi4Y744Eeuk4pNB4Zwu1A" name="clients" multiple="true" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
-              </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_tbi4ZL44Eeuk4pNB4Zwu1A" name="getClientAccountsScript()" content="import com.prestaser.model.Client&#xD;&#xA;import com.sforce.soap.partner.sobject.SObject&#xD;&#xA;&#xD;&#xA;ArrayList&lt;Client> accs = new ArrayList()&#xD;&#xA;&#xD;&#xA;SObject[] all = queryResults.getRecords()&#xD;&#xA;&#xD;&#xA;for  (SObject s in all){&#xD;&#xA;&#x9;Client a = new Client()&#xD;&#xA;&#x9;a.clientId = s.getField(&quot;AccountNumber&quot;)&#xD;&#xA;&#x9;a.name = s.getField(&quot;Name&quot;)&#xD;&#xA;&#x9;accs.add(a)&#xD;&#xA;}&#xD;&#xA;return accs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-                <referencedElements xmi:type="definition:Output" xmi:id="_qDbW8L8qEeuG3vYWfjoMXw" name="queryResults" type="com.sforce.soap.partner.QueryResult"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_tbi4Zr44Eeuk4pNB4Zwu1A" type="ASSIGNMENT"/>
-            </outputs>
-          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_tbi4Z744Eeuk4pNB4Zwu1A">
             <leftOperand xmi:type="expression:Expression" xmi:id="_tbi4aL44Eeuk4pNB4Zwu1A" name="request" content="request" type="TYPE_VARIABLE" returnType="com.prestaser.model.Request">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tbi4ab44Eeuk4pNB4Zwu1A" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
@@ -94,11 +42,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_tbi4dr44Eeuk4pNB4Zwu1A" name="request" content="request" type="TYPE_VARIABLE" returnType="com.prestaser.model.Request">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tbi4d744Eeuk4pNB4Zwu1A" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_tbi4eL44Eeuk4pNB4Zwu1A" name="requestInput.client" content="//Retrieve aggregated Client using its DAO and persistenceId&#xD;&#xA;def clientVar = clientDAO.findByPersistenceId(requestInput?.client?.persistenceId?.trim() ? requestInput.cliente.persistenceId.toLong() : null)&#xD;&#xA;if (!clientVar) {&#xD;&#xA;&#x9;if (requestInput?.cliente?.persistenceId?.trim() ? requestInput.cliente.persistenceId.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Cliente` with the persistence id &quot; + requestInput?.cliente?.persistenceId?.trim() ? requestInput.cliente.persistenceId.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;return clientVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Client">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_qM7e8L8vEeuG3vYWfjoMXw" name="clientDAO" content="clientDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.prestaser.model.ClientDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_qM7e8b8vEeuG3vYWfjoMXw" name="requestInput" type="COMPLEX">
-                <mapping xmi:type="process:ContractInputMapping" xmi:id="_qM7e8r8vEeuG3vYWfjoMXw"/>
-              </referencedElements>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_tbi4eL44Eeuk4pNB4Zwu1A" name="requestInput.client" content="return client" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Client">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_c2V10ML0Eeu3oPhgT08OIA" name="client" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_tbi4e744Eeuk4pNB4Zwu1A" type="JAVA_METHOD" expression="setClient">
               <inputTypes>com.prestaser.model.Client</inputTypes>
@@ -110,7 +55,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_tbi4f744Eeuk4pNB4Zwu1A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_tbi4gL44Eeuk4pNB4Zwu1A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_tbi4gb44Eeuk4pNB4Zwu1A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_tbi4gr44Eeuk4pNB4Zwu1A" name="selectClient" content="c306b22b-7d96-4236-afff-f61f72252e58" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_tbi4gr44Eeuk4pNB4Zwu1A" name="fillRequest" content="a09c097b-081c-4d8a-9c34-d6b60e7c4e13" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_tbi4g744Eeuk4pNB4Zwu1A">
             <inputs xmi:type="process:ContractInput" xmi:id="_tbi4hL44Eeuk4pNB4Zwu1A" name="requestInput" type="COMPLEX">
@@ -123,8 +68,11 @@
               </inputs>
               <inputs xmi:type="process:ContractInput" xmi:id="_tbi4ir44Eeuk4pNB4Zwu1A" name="client" type="COMPLEX">
                 <mapping xmi:type="process:ContractInputMapping" xmi:id="_tbi4i744Eeuk4pNB4Zwu1A"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_tbi4jL44Eeuk4pNB4Zwu1A" name="persistanceId">
+                <inputs xmi:type="process:ContractInput" xmi:id="_tbi4jL44Eeuk4pNB4Zwu1A" name="persistenceId_string">
                   <mapping xmi:type="process:ContractInputMapping" xmi:id="_tbi4jb44Eeuk4pNB4Zwu1A"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_7TSV4MLzEeu3oPhgT08OIA" name="name">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_7TSV4cLzEeu3oPhgT08OIA"/>
                 </inputs>
               </inputs>
             </inputs>
@@ -334,7 +282,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_3CNRYb-1EeuG3vYWfjoMXw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_noUVdL44Eeuk4pNB4Zwu1A">
-        <targetForm xmi:type="expression:Expression" xmi:id="_fK7rcMLwEeu3oPhgT08OIA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_iMzrkMLxEeu3oPhgT08OIA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_noUVdr44Eeuk4pNB4Zwu1A">
         <targetForm xmi:type="expression:Expression" xmi:id="_noUVd744Eeuk4pNB4Zwu1A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -415,13 +363,13 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_tbjfUL44Eeuk4pNB4Zwu1A" type="3005" element="_tbi4Qb44Eeuk4pNB4Zwu1A" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_tbjfUb44Eeuk4pNB4Zwu1A" type="5005" element="_tbi4Qb44Eeuk4pNB4Zwu1A"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tbjfUr44Eeuk4pNB4Zwu1A" x="574" y="27" width="153" height="76"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tbjfUr44Eeuk4pNB4Zwu1A" x="547" y="27" width="153" height="76"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_vKUHML44Eeuk4pNB4Zwu1A" type="3062" element="_vKTgIL44Eeuk4pNB4Zwu1A" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_vKUHMb44Eeuk4pNB4Zwu1A" type="5090" element="_vKTgIL44Eeuk4pNB4Zwu1A">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_vKUHMr44Eeuk4pNB4Zwu1A" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vKUHM744Eeuk4pNB4Zwu1A" x="764" y="144"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vKUHM744Eeuk4pNB4Zwu1A" x="783" y="50"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_shonIL8cEeuG3vYWfjoMXw" type="3027" element="_she2IL8cEeuG3vYWfjoMXw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_shpOML8cEeuG3vYWfjoMXw" type="5017"/>
