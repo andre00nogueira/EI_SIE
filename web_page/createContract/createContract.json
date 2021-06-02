@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "createContract",
   "name" : "createContract",
-  "lastUpdate" : 1622572612326,
+  "lastUpdate" : 1622643885451,
   "rows" : [
     [
       {
@@ -10,7 +10,20 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "5e927545-015f-435d-b179-08197abf213f",
         "hasValidationError" : false,
         "id" : "pbContainer",
@@ -204,6 +217,77 @@
                           }
                         ]
                       ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Cliente Aceita?"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "Sim",
+                            "Não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "formInput.hasAccepted"
+                        }
+                      },
+                      "reference" : "6c1ed933-ce04-49a1-a4dd-9ed140a01d91",
+                      "hasValidationError" : false,
+                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
@@ -471,7 +555,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "",
+        "    hasAccepted: $data.formInput.hasAccepted",
         "}"
       ],
       "exposed" : false
@@ -490,17 +574,19 @@
       ],
       "exposed" : false
     },
-    "client_selected" : {
-      "type" : "constant",
-      "value" : [
-        ""
-      ],
-      "exposed" : false
-    },
     "client" : {
       "type" : "url",
       "value" : [
         "../{{context.client_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"hasAccepted\" : null",
+        "}"
       ],
       "exposed" : false
     }
