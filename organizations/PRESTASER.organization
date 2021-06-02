@@ -22,6 +22,15 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="alexandre.tecnico">
+      <firstName>Alexandre</firstName>
+      <lastName>Tecnico</lastName>
+      <manager>cesar.gservico</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -35,6 +44,9 @@
     <group name="GestorServico">
       <displayName>Gestor de Servico</displayName>
     </group>
+    <group name="Tecnico">
+      <displayName>Tecnico</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -46,6 +58,11 @@
       <userName>cesar.gservico</userName>
       <roleName>Member</roleName>
       <groupName>GestorServico</groupName>
+    </membership>
+    <membership>
+      <userName>alexandre.tecnico</userName>
+      <roleName>Member</roleName>
+      <groupName>Tecnico</groupName>
     </membership>
   </memberships>
 </organization:Organization>

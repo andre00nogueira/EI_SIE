@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "associateTechnician",
   "name" : "associateTechnician",
-  "lastUpdate" : 1622646769655,
+  "lastUpdate" : 1622651633419,
   "rows" : [
     [
       {
@@ -169,6 +169,108 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{allTechnicians}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "ff135fc6-5e74-4f20-9e8a-b8ca9b743cc8",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{group_id.value}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "e0c991c9-b8b8-4f63-adbb-b5ccf722ae5b",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
                         "md" : 12,
                         "lg" : 12
                       },
@@ -314,17 +416,20 @@
                           "value" : "Select an option"
                         },
                         "availableValues" : {
-                          "type" : "constant"
+                          "type" : "expression",
+                          "value" : "allTechnicians"
                         },
                         "displayedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "firstname"
                         },
                         "returnedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "firstname"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : ""
+                          "value" : "formInput.technician"
                         }
                       },
                       "reference" : "5e0b4aab-d614-46db-8e29-f947ea87ccca",
@@ -513,7 +618,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "",
+        "    technician: $data.formInput.technician",
         "}"
       ],
       "exposed" : false
@@ -543,6 +648,29 @@
       "type" : "url",
       "value" : [
         "../{{context.client_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "allTechnicians" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=301"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"technician\": null",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "group_id" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/group_id"
       ],
       "exposed" : false
     }
