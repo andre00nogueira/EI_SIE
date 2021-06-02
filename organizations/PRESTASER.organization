@@ -31,6 +31,24 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="andre.gconta">
+      <firstName>Andre</firstName>
+      <lastName>GConta</lastName>
+      <manager>cesar.gservico</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="solange.funcadmin">
+      <firstName>Solange</firstName>
+      <lastName>FuncAdministrativo</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -46,6 +64,12 @@
     </group>
     <group name="Tecnico">
       <displayName>Tecnico</displayName>
+    </group>
+    <group name="GestorConta">
+      <displayName>Gestor de Conta</displayName>
+    </group>
+    <group name="FuncionarioAdministrativo">
+      <displayName>Funcionario da Area Administrativa</displayName>
     </group>
   </groups>
   <memberships>
@@ -63,6 +87,16 @@
       <userName>alexandre.tecnico</userName>
       <roleName>Member</roleName>
       <groupName>Tecnico</groupName>
+    </membership>
+    <membership>
+      <userName>andre.gconta</userName>
+      <roleName>Member</roleName>
+      <groupName>GestorConta</groupName>
+    </membership>
+    <membership>
+      <userName>solange.funcadmin</userName>
+      <roleName>Member</roleName>
+      <groupName>FuncionarioAdministrativo</groupName>
     </membership>
   </memberships>
 </organization:Organization>
