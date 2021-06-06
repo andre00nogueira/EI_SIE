@@ -413,7 +413,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_sE-6QcOkEeuPs55QMps5-w" name="true" content="true" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_noUVdL44Eeuk4pNB4Zwu1A">
-        <targetForm xmi:type="expression:Expression" xmi:id="_WhY2UMZfEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_uytvYMZjEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_noUVdr44Eeuk4pNB4Zwu1A">
         <targetForm xmi:type="expression:Expression" xmi:id="_noUVd744Eeuk4pNB4Zwu1A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -654,24 +654,24 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_CiwAYMRsEeuprOBdJRxGOw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_CiwAYsRsEeuprOBdJRxGOw" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_-KORIMVAEeuprOBdJRxGOw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_-KORIcVAEeuprOBdJRxGOw" name="intervention" content="intervention" type="TYPE_VARIABLE" returnType="com.prestaser.model.Intervention">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-jBLoMVAEeuprOBdJRxGOw" name="intervention" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Intervention"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_-KORIcVAEeuprOBdJRxGOw" name="interventionDescription" content="interventionDescription" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_azaIUMZjEeunJYHbo2aFyQ" name="interventionDescription" dataType="_noUVkb44Eeuk4pNB4Zwu1A"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_-KORIsVAEeuprOBdJRxGOw" name="interventionInput.description" content="interventionInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_PZn8YMVBEeuprOBdJRxGOw" name="interventionInput" type="COMPLEX"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_cwjxgMZjEeunJYHbo2aFyQ" name="interventionInput" type="COMPLEX"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_-KORI8VAEeuprOBdJRxGOw" type="JAVA_METHOD" expression="setDescription">
+            <operator xmi:type="expression:Operator" xmi:id="_-KORI8VAEeuprOBdJRxGOw" type="ASSIGNMENT" expression="setDescription">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_JaazAMVBEeuprOBdJRxGOw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_JaazAcVBEeuprOBdJRxGOw" name="intervention" content="intervention" type="TYPE_VARIABLE" returnType="com.prestaser.model.Intervention">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JvTd4MVBEeuprOBdJRxGOw" name="intervention" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Intervention"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_JaazAcVBEeuprOBdJRxGOw" name="interventionDate" content="interventionDate" type="TYPE_VARIABLE" returnType="java.time.LocalDateTime">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_cLZ2AMZjEeunJYHbo2aFyQ" name="interventionDate" dataType="_noUVkr44Eeuk4pNB4Zwu1A" className="java.time.LocalDateTime"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_JaazAsVBEeuprOBdJRxGOw" name="interventionInput.interventionDate" content="interventionInput?.interventionDate" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDateTime">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_OCETkMVBEeuprOBdJRxGOw" name="interventionInput" type="COMPLEX"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_e2jNoMZjEeunJYHbo2aFyQ" name="interventionInput" type="COMPLEX"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_JaazA8VBEeuprOBdJRxGOw" type="JAVA_METHOD" expression="setInterventionDate">
+            <operator xmi:type="expression:Operator" xmi:id="_JaazA8VBEeuprOBdJRxGOw" type="ASSIGNMENT" expression="setInterventionDate">
               <inputTypes>java.time.LocalDateTime</inputTypes>
             </operator>
           </operations>
@@ -684,7 +684,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_E61coMRtEeuprOBdJRxGOw" name="fillIntervention" content="598820f3-8e5f-4b3a-a875-f9e192cc8a29" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_HbScqcRsEeuprOBdJRxGOw">
-            <inputs xmi:type="process:ContractInput" xmi:id="_wgvrEMU9EeuprOBdJRxGOw" name="interventionInput" type="COMPLEX" dataReference="intervention">
+            <inputs xmi:type="process:ContractInput" xmi:id="_wgvrEMU9EeuprOBdJRxGOw" name="interventionInput" type="COMPLEX">
               <inputs xmi:type="process:ContractInput" xmi:id="_wgvrEcU9EeuprOBdJRxGOw" name="description"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_wgvrEsU9EeuprOBdJRxGOw" name="interventionDate" type="LOCALDATETIME"/>
             </inputs>
@@ -745,8 +745,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_Bd6SocVFEeuprOBdJRxGOw" name="request" content="request" type="TYPE_VARIABLE" returnType="com.prestaser.model.Request">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jGcIcMVFEeuprOBdJRxGOw" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Bd6SosVFEeuprOBdJRxGOw" name="addIntervention()" content="intervention" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Intervention">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_s08OEMVFEeuprOBdJRxGOw" name="intervention" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Intervention"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Bd6SosVFEeuprOBdJRxGOw" name="addIntervention()" content="import com.prestaser.model.Intervention&#xD;&#xA;&#xD;&#xA;def inter = new Intervention()&#xD;&#xA;inter.setDescription(interventionDescription)&#xD;&#xA;inter.setInterventionDate(interventionDate)&#xD;&#xA;return inter" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Intervention">
+              <referencedElements xmi:type="process:Data" xmi:id="_oNgV8MZjEeunJYHbo2aFyQ" name="interventionDescription" dataType="_noUVkb44Eeuk4pNB4Zwu1A"/>
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_oNgV8cZjEeunJYHbo2aFyQ" name="interventionDate" dataType="_noUVkr44Eeuk4pNB4Zwu1A" className="java.time.LocalDateTime"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_Bd6So8VFEeuprOBdJRxGOw" type="JAVA_METHOD" expression="addToInterventions">
               <inputTypes>com.prestaser.model.Intervention</inputTypes>
@@ -852,7 +853,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_3dPPGMRsEeuprOBdJRxGOw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_3dPPF8RsEeuprOBdJRxGOw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:EndEvent" xmi:id="_9v0ncMRsEeuprOBdJRxGOw" name="End2" incoming="_-TmC4MRsEeuprOBdJRxGOw">
+        <elements xmi:type="process:EndEvent" xmi:id="_9v0ncMRsEeuprOBdJRxGOw" name="Termina Contacto" incoming="_-TmC4MRsEeuprOBdJRxGOw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9v0ncsRsEeuprOBdJRxGOw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9v0nccRsEeuprOBdJRxGOw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9v0nc8RsEeuprOBdJRxGOw" name="" content="" returnTypeFixed="true"/>
@@ -962,14 +963,8 @@
       <data xmi:type="process:Data" xmi:id="_DuO0sMRvEeuprOBdJRxGOw" name="hasClientAccepted" dataType="_noUVjL44Eeuk4pNB4Zwu1A">
         <defaultValue xmi:type="expression:Expression" xmi:id="_DuO0scRvEeuprOBdJRxGOw" content="" returnType="java.lang.Boolean"/>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_sKTPQMU9EeuprOBdJRxGOw" name="intervention" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Intervention">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_sKTPQcU9EeuprOBdJRxGOw" name="" content="" interpreter="GROOVY"/>
-      </data>
       <data xmi:type="process:Data" xmi:id="_5r9goMVBEeuprOBdJRxGOw" name="hasMoreInterventions" dataType="_noUVjL44Eeuk4pNB4Zwu1A">
         <defaultValue xmi:type="expression:Expression" xmi:id="_5r9gocVBEeuprOBdJRxGOw" name="false" content="false" returnType="java.lang.Boolean"/>
-      </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_DuAX4MVDEeuprOBdJRxGOw" name="interventions" multiple="true" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Intervention">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_DuAX4cVDEeuprOBdJRxGOw" name="" content="" interpreter="GROOVY"/>
       </data>
       <data xmi:type="process:Data" xmi:id="_w5F3kMYXEeuprOBdJRxGOw" name="iterator" dataType="_noUVjr44Eeuk4pNB4Zwu1A">
         <defaultValue xmi:type="expression:Expression" xmi:id="_w5F3kcYXEeuprOBdJRxGOw" name="0" content="0" returnType="java.lang.Integer"/>
@@ -977,8 +972,14 @@
       <data xmi:type="process:Data" xmi:id="_y1TsoMYXEeuprOBdJRxGOw" name="interventionsCount" dataType="_noUVjr44Eeuk4pNB4Zwu1A">
         <defaultValue xmi:type="expression:Expression" xmi:id="_y1TsocYXEeuprOBdJRxGOw" name="0" content="0" returnType="java.lang.Integer"/>
       </data>
+      <data xmi:type="process:JavaObjectData" xmi:id="_YEFbUMZjEeunJYHbo2aFyQ" name="interventionDate" dataType="_noUVkr44Eeuk4pNB4Zwu1A" className="java.time.LocalDateTime">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_YEFbUcZjEeunJYHbo2aFyQ" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDateTime"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_ZSkAoMZjEeunJYHbo2aFyQ" name="interventionDescription" dataType="_noUVkb44Eeuk4pNB4Zwu1A">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_ZSkAocZjEeunJYHbo2aFyQ" content=""/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_sPkFz8L4Eeu_fIKJc27m8Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_WynwQMZfEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_vH7xcMZjEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_sPkF0cL4Eeu_fIKJc27m8Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_sPkF0sL4Eeu_fIKJc27m8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1171,7 +1172,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_-deQWMOrEeuPs55QMps5-w" type="3027" element="_-ddpQMOrEeuPs55QMps5-w" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_-deQWsOrEeuPs55QMps5-w" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-deQWcOrEeuPs55QMps5-w" x="134" y="161" width="146" height="73"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-deQWcOrEeuPs55QMps5-w" x="134" y="161" width="144" height="71"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_MyV0ccL5Eeu_fIKJc27m8Q"/>
