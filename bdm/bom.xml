@@ -37,6 +37,7 @@
                 <relationField type="AGGREGATION" reference="com.prestaser.model.Client" fetchType="LAZY" name="client" nullable="true" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="requestDate" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="technician" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.prestaser.model.Intervention" fetchType="LAZY" name="interventions" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
