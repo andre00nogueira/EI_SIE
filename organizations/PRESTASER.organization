@@ -49,6 +49,15 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="jorge.funcfinan">
+      <firstName>Jorge</firstName>
+      <lastName>FuncFinanceiro</lastName>
+      <manager>miguel.administrator</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -70,6 +79,9 @@
     </group>
     <group name="FuncionarioAdministrativo">
       <displayName>Funcionario da Area Administrativa</displayName>
+    </group>
+    <group name="FuncionarioFinanceiro">
+      <displayName>Funcionario da Area Financeira</displayName>
     </group>
   </groups>
   <memberships>
@@ -97,6 +109,11 @@
       <userName>solange.funcadmin</userName>
       <roleName>Member</roleName>
       <groupName>FuncionarioAdministrativo</groupName>
+    </membership>
+    <membership>
+      <userName>jorge.funcfinan</userName>
+      <roleName>Member</roleName>
+      <groupName>FuncionarioFinanceiro</groupName>
     </membership>
   </memberships>
 </organization:Organization>
