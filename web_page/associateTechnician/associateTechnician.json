@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "associateTechnician",
   "name" : "associateTechnician",
-  "lastUpdate" : 1623068857876,
+  "lastUpdate" : 1623169450182,
   "rows" : [
     [
       {
@@ -654,7 +654,7 @@
     "allTechnicians" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=3"
+        "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=301"
       ],
       "exposed" : false
     },
