@@ -40,6 +40,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.prestaser.model.Invoice">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.prestaser.model.Intervention" fetchType="LAZY" name="intervention" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="total" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clientName" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.prestaser.model.Request">
             <fields>
                 <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
