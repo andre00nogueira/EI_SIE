@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "analyzeComplaintForm",
   "name" : "analyzeComplaintForm",
-  "lastUpdate" : 1623258870943,
+  "lastUpdate" : 1623358772165,
   "rows" : [
     [
       {
@@ -167,7 +167,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{complaint.client}}"
+                    "value" : "{{complaint.client.name}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -508,9 +508,9 @@
       "exposed" : false
     },
     "complaint" : {
-      "type" : "businessdata",
+      "type" : "url",
       "value" : [
-        "{\"displayValue\":\"find [com.prestaser.model.Complaint]\",\"businessObjectName\":\"Complaint\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.prestaser.model.Complaint\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "../{{context.complaint_ref.link}}"
       ],
       "exposed" : false
     }

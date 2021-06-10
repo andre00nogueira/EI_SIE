@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="pedidos" version="1.0" profile="User" homePage="pedidos_dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Pedidos</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_Pedidos" token="pedidos_dashboard"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="pedidos_dashboard">
+                <displayName>Dashboard</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application token="prestaser" version="1.0" profile="User" homePage="prestaser_dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Prestaser</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_Pedidos" token="pedidos"/>
+            <applicationPage customPage="custompage_Reclamacoes" token="reclamacoes"/>
+            <applicationPage customPage="custompage_Prestaser" token="prestaser_dashboard"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="prestaser_dashboard">
+                <displayName>Dashboard</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application token="reclamacoes" version="1.0" profile="User" homePage="reclamacoes_dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Reclamacoes</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_Reclamacoes" token="reclamacoes_dashboard"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="reclamacoes_dashboard">
+                <displayName>Dashboard</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "associateAccountManager",
   "name" : "associateAccountManager",
-  "lastUpdate" : 1623182953478,
+  "lastUpdate" : 1623358372246,
   "rows" : [
     [
       {
@@ -522,7 +522,7 @@
     "allAccountManagers" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=4"
+        "../API/identity/user?p=0&c=5&o=lastname%20ASC&f=enabled=true&f=group_id=401"
       ],
       "exposed" : false
     }
