@@ -885,6 +885,13 @@
                       <referencedElements xmi:type="process:Data" xmi:id="_6OsnVMZfEeunJYHbo2aFyQ" name="iterator" dataType="_noUVjr44Eeuk4pNB4Zwu1A"/>
                     </expressions>
                   </expressions>
+                  <expressions xmi:type="expression:ListExpression" xmi:id="_XFmbgMohEeu3-eat168aag">
+                    <expressions xmi:type="expression:Expression" xmi:id="_XFmbgcohEeu3-eat168aag" name="ActivityDate" content="ActivityDate"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_XFmbgsohEeu3-eat168aag" name="newScript()" content="import java.time.*&#xD;&#xA;Date.from(request.interventions.getAt(iterator).interventionDate.atZone(ZoneId.systemDefault()).toInstant());" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XFmbg8ohEeu3-eat168aag" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
+                      <referencedElements xmi:type="process:Data" xmi:id="_XFmbhMohEeu3-eat168aag" name="iterator" dataType="_noUVjr44Eeuk4pNB4Zwu1A"/>
+                    </expressions>
+                  </expressions>
                 </expression>
               </parameters>
             </configuration>
