@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.0",
-  "id" : "analyzeComplaintForm",
-  "name" : "analyzeComplaintForm",
-  "lastUpdate" : 1623258870943,
+  "id" : "gestorServicoPrestaEsclarecimentosForm",
+  "name" : "gestorServicoPrestaEsclarecimentosForm",
+  "lastUpdate" : 1623259002348,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "91c9f531-ad4f-4aea-8ff7-1ec156d8e35f",
+        "reference" : "1ce35241-1627-4ced-8772-4669b71a7234",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7894a705-49f1-48f0-a3b2-fa4b5b8e4b88",
+              "reference" : "197a0452-2bbc-4ce9-940b-a9615e390589",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "2b40b1fa-c259-478f-9ca1-1030e4b11a78",
+              "reference" : "96eef485-b04f-461e-8fca-96d3a4b62469",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "68585f48-b6e4-451b-b738-b062249ac7b6",
+        "reference" : "495342e5-43eb-4d89-beac-8c5706f8bc8f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,114 +123,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "bd0719ed-54b8-447f-90fe-ff2fb6376eae",
+          "reference" : "f134e432-7c5c-4d47-aff3-e703ac14919e",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Cliente"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{complaint.client}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "22a9f613-1212-41e8-942d-3183884863b7",
-                "hasValidationError" : false,
-                "id" : "pbText"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Descrição da Reclamação"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{complaint.description}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "33e44537-19b0-416d-9eda-c574dfe767b6",
-                "hasValidationError" : false,
-                "id" : "pbText"
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -263,7 +159,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Análise do Motivo da Reclamação"
+                    "value" : "Cliente Tem Razão?"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -271,7 +167,7 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
+                    "value" : 1
                   },
                   "inline" : {
                     "type" : "constant",
@@ -280,8 +176,8 @@
                   "availableValues" : {
                     "type" : "constant",
                     "value" : [
-                      "Valor das Intervenções",
-                      "Prestação do Serviço"
+                      "Sim",
+                      "Não"
                     ]
                   },
                   "displayedKey" : {
@@ -293,10 +189,10 @@
                   },
                   "selectedValue" : {
                     "type" : "variable",
-                    "value" : "formInput.problemInput"
+                    "value" : "formInput.clienteTemRazao"
                   }
                 },
-                "reference" : "b92d4506-f0ea-4eb3-87c3-e203caf184d0",
+                "reference" : "ef42bef4-8f4f-4f88-90dd-b77103c2f0a7",
                 "hasValidationError" : false,
                 "id" : "pbRadioButtons"
               }
@@ -372,7 +268,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "56e918cd-6f26-482d-8260-78545b11c970",
+                "reference" : "7f64e4c6-d5db-45d2-9bf7-47dcc9d1813b",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -424,7 +320,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "8fe4ad8b-7bad-4b1f-82bd-47f46d9b5f14",
+                "reference" : "fa683e56-6141-442d-932a-044c449747a1",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -437,14 +333,14 @@
   ],
   "assets" : [
     {
-      "id" : "8af170ed-d930-48ae-9314-c25e50010b09",
+      "id" : "a45e8a73-04b6-42bb-a7a9-bbb212f86703",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "9eaa1d2c-ebb0-474a-8310-bf47e55d7e65",
+      "id" : "e2178212-bb01-4329-acdc-4ec47f5bff0e",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -464,7 +360,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"problemInput\" : null\r",
+        "  \"clienteTemRazao\" : \"\"\r",
         "}"
       ],
       "exposed" : false
@@ -488,7 +384,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tproblemInput: $data.formInput.problemInput",
+        "\tclienteTemRazao: $data.formInput.clienteTemRazao",
         "}"
       ],
       "exposed" : false
@@ -506,17 +402,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "complaint" : {
-      "type" : "businessdata",
-      "value" : [
-        "{\"displayValue\":\"find [com.prestaser.model.Complaint]\",\"businessObjectName\":\"Complaint\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.prestaser.model.Complaint\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
-      ],
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "6f085ccd-0c98-47f7-963d-6237b1646c7d",
+  "uuid" : "4aff5cdf-2896-4ea0-b814-f788dfcf32ac",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
