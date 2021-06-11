@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "analyzeComplaintForm",
   "name" : "analyzeComplaintForm",
-  "lastUpdate" : 1623358772165,
+  "lastUpdate" : 1623421026322,
   "rows" : [
     [
       {
@@ -167,7 +167,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{complaint.client.name}}"
+                    "value" : "{{complaint.client}}"
                   },
                   "alignment" : {
                     "type" : "constant",
