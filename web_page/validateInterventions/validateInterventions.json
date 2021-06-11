@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "validateInterventions",
   "name" : "validateInterventions",
-  "lastUpdate" : 1623195027220,
+  "lastUpdate" : 1623437640725,
   "rows" : [
     [
       {
@@ -221,7 +221,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Are all interventions validated?"
+                    "value" : "Todas as intervenções validadas?"
                   },
                   "labelPosition" : {
                     "type" : "constant",

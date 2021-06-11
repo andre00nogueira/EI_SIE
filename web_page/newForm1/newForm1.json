@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "newForm1",
   "name" : "newForm1",
-  "lastUpdate" : 1623433532382,
+  "lastUpdate" : 1623437580187,
   "rows" : [
     [
       {
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Complaint"
+                    "value" : "Reclamação"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -234,11 +234,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Client"
+                          "value" : "Cliente"
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Select a Client"
+                          "value" : "Selecionar um Cliente"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -310,7 +310,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Description"
+                          "value" : "Descrição"
                         },
                         "labelPosition" : {
                           "type" : "constant",

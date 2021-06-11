@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "gContaContactaClienteForm",
   "name" : "gContaContactaClienteForm",
-  "lastUpdate" : 1623320998203,
+  "lastUpdate" : 1623437602363,
   "rows" : [
     [
       {
@@ -159,7 +159,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Cliente Tem Razao?"
+                    "value" : "Cliente Tem Razão?"
                   },
                   "labelPosition" : {
                     "type" : "constant",

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "associateAccountManager",
   "name" : "associateAccountManager",
-  "lastUpdate" : 1623433560459,
+  "lastUpdate" : 1623437550258,
   "rows" : [
     [
       {
@@ -152,7 +152,7 @@
                   },
                   "hidden" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -202,7 +202,7 @@
                   },
                   "hidden" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -270,7 +270,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Account Manager"
+                    "value" : "Gestor de Conta"
                   },
                   "labelPosition" : {
                     "type" : "constant",
