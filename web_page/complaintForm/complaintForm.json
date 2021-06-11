@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "complaintForm",
   "name" : "complaintForm",
-  "lastUpdate" : 1623168426433,
+  "lastUpdate" : 1623422503202,
   "rows" : [
     [
       {
@@ -268,6 +268,58 @@
                       "hasValidationError" : false,
                       "id" : "pbSelect",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{formInput..complaintInput.client}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "8643212e-b478-465b-bdd3-04fdd6723d38",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ],
                   [

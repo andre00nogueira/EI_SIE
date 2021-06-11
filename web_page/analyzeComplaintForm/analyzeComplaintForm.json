@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "analyzeComplaintForm",
   "name" : "analyzeComplaintForm",
-  "lastUpdate" : 1623421026322,
+  "lastUpdate" : 1623433627492,
   "rows" : [
     [
       {
@@ -167,7 +167,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{complaint.client}}"
+                    "value" : "{{client.name}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -511,6 +511,13 @@
       "type" : "url",
       "value" : [
         "../{{context.complaint_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "client" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.client_ref.link}}"
       ],
       "exposed" : false
     }

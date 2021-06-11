@@ -154,28 +154,28 @@
               <operator xmi:type="expression:Operator" xmi:id="_OW3SMMhmEeu-WeKjcEkv-g" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
-          <operations xmi:type="expression:Operation" xmi:id="_fWgtRchqEeu-WeKjcEkv-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_fWgtRshqEeu-WeKjcEkv-g" name="complaint" content="complaint" type="TYPE_VARIABLE" returnType="com.prestaser.model.Complaint">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fWgtR8hqEeu-WeKjcEkv-g" name="complaint" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Complaint"/>
+          <operations xmi:type="expression:Operation" xmi:id="_aQZDrMq9EeuepLWy70k04g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_aQZDrcq9EeuepLWy70k04g" name="complaint" content="complaint" type="TYPE_VARIABLE" returnType="com.prestaser.model.Complaint">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_aQZDrsq9EeuepLWy70k04g" name="complaint" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Complaint"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_fWgtSMhqEeu-WeKjcEkv-g" name="complaintInput.client" content="//Retrieve aggregated Client using its DAO and persistenceId&#xD;&#xA;def clientVar = clientDAO.findByPersistenceId(complaintInput?.client?.persistenceId_string?.trim() ? complaintInput.client.persistenceId_string.toLong() : null)&#xD;&#xA;if (!clientVar) {&#xD;&#xA;&#x9;if (complaintInput?.client?.persistenceId_string?.trim() ? complaintInput.client.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Client` with the persistence id &quot; + complaintInput?.client?.persistenceId_string?.trim() ? complaintInput.client.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;return clientVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Client">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_fWgtSchqEeu-WeKjcEkv-g" name="complaintInput" type="COMPLEX"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_fWgtSshqEeu-WeKjcEkv-g" name="clientDAO" content="clientDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.prestaser.model.ClientDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_aQZDr8q9EeuepLWy70k04g" name="complaintInput.description" content="complaintInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_aQZDsMq9EeuepLWy70k04g" name="complaintInput" type="COMPLEX"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_fWgtS8hqEeu-WeKjcEkv-g" type="JAVA_METHOD" expression="setClient">
-              <inputTypes>com.prestaser.model.Client</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_fWgtTMhqEeu-WeKjcEkv-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_fWgtTchqEeu-WeKjcEkv-g" name="complaint" content="complaint" type="TYPE_VARIABLE" returnType="com.prestaser.model.Complaint">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fWgtTshqEeu-WeKjcEkv-g" name="complaint" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Complaint"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_fWgtT8hqEeu-WeKjcEkv-g" name="complaintInput.description" content="complaintInput?.description" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_fWgtUMhqEeu-WeKjcEkv-g" name="complaintInput" type="COMPLEX"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_fWgtUchqEeu-WeKjcEkv-g" type="JAVA_METHOD" expression="setDescription">
+            <operator xmi:type="expression:Operator" xmi:id="_aQZDscq9EeuepLWy70k04g" type="JAVA_METHOD" expression="setDescription">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_jQHyMMrSEeuepLWy70k04g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_jQHyMcrSEeuepLWy70k04g" name="client" content="client" type="TYPE_VARIABLE" returnType="com.prestaser.model.Client">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_j71osMrSEeuepLWy70k04g" name="client" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Client"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jQHyMsrSEeuepLWy70k04g" name="newScript()" content="def clientVar = clientDAO.findByPersistenceId(clientInput?.persistenceId_string?.trim() ? clientInput.persistenceId_string.toLong() : null)&#xD;&#xA;if (!clientVar) {&#xD;&#xA;&#x9;if (clientInput?.persistenceId_string?.trim() ? clientInput.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Cliente` with the persistence id &quot; + clientInput?.persistenceId_string?.trim() ? clientInput.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;return clientVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.prestaser.model.Client">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_t-8P4MrTEeuepLWy70k04g" name="clientDAO" content="clientDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.prestaser.model.ClientDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_t-8P4crTEeuepLWy70k04g" name="clientInput" type="COMPLEX">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_t-8P4srTEeuepLWy70k04g"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_jQHyM8rSEeuepLWy70k04g" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_nfMTU8hkEeu-WeKjcEkv-g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_nfMTVMhkEeu-WeKjcEkv-g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -183,18 +183,18 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_nfMTV8hkEeu-WeKjcEkv-g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_nfMTVshkEeu-WeKjcEkv-g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_nfMTWchkEeu-WeKjcEkv-g">
-            <targetForm xmi:type="expression:Expression" xmi:id="_ga8lwMhqEeu-WeKjcEkv-g" name="complaintForm" content="da87a17f-4508-4bd3-a322-3717b28a8fb1" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_dijX8Mq9EeuepLWy70k04g" name="newForm1" content="d06ddd40-9261-4239-b0b1-d193b40e2a1b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_nfMTWMhkEeu-WeKjcEkv-g">
-            <inputs xmi:type="process:ContractInput" xmi:id="_fWgtQMhqEeu-WeKjcEkv-g" name="complaintInput" type="COMPLEX" dataReference="complaint">
-              <inputs xmi:type="process:ContractInput" xmi:id="_fWgtQchqEeu-WeKjcEkv-g" name="client" type="COMPLEX">
-                <inputs xmi:type="process:ContractInput" xmi:id="_fWgtQshqEeu-WeKjcEkv-g" name="persistenceId_string"/>
-              </inputs>
-              <inputs xmi:type="process:ContractInput" xmi:id="_fWgtQ8hqEeu-WeKjcEkv-g" name="description"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_aQZDoMq9EeuepLWy70k04g" name="complaintInput" type="COMPLEX" dataReference="complaint">
+              <inputs xmi:type="process:ContractInput" xmi:id="_aQZDo8q9EeuepLWy70k04g" name="description"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_fWgtRMhqEeu-WeKjcEkv-g" expression="!complaintInput?.client || complaintInput?.client?.persistenceId_string" errorMessage="Client must reference an existing instance with a persistenceId for Complaint" name="aggregation_complaintInput_client">
-              <inputNames>complaintInput</inputNames>
-            </constraints>
+            <inputs xmi:type="process:ContractInput" xmi:id="_DV7RAMrTEeuepLWy70k04g" name="clientInput" type="COMPLEX">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_DV7RAcrTEeuepLWy70k04g"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_EWNCQMrTEeuepLWy70k04g" name="persistenceId_string">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_EWNCQcrTEeuepLWy70k04g"/>
+              </inputs>
+            </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_nfMTW8hkEeu-WeKjcEkv-g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -535,8 +535,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_TngdZcq4Eeug1p9s8WupCA" name="jdbc:mysql://127.0.0.1:3306/prestaser?serverTimezone=UTC" content="jdbc:mysql://127.0.0.1:3306/prestaser?serverTimezone=UTC" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TngdZsq4Eeug1p9s8WupCA" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="_TngdZ8q4Eeug1p9s8WupCA" name="script()" content="&quot;INSERT INTO notacredito (descricao) VALUES('&quot; + complaint.description + &quot;')&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TngdaMq4Eeug1p9s8WupCA" name="complaint" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Complaint"/>
+                <expression xmi:type="expression:Expression" xmi:id="_TngdZ8q4Eeug1p9s8WupCA" name="script()" content="&quot;INSERT INTO notacredito (descricao,clienteId) VALUES('&quot; + complaint.description + &quot;','&quot;+client.clientId+&quot;')&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FzzWwMrVEeuepLWy70k04g" name="complaint" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Complaint"/>
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FzzWwcrVEeuepLWy70k04g" name="client" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Client"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tngdacq4Eeug1p9s8WupCA" key="username">
@@ -548,7 +549,9 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tngdbcq4Eeug1p9s8WupCA" key="separator">
                 <expression xmi:type="expression:Expression" xmi:id="_Tngdbsq4Eeug1p9s8WupCA" content="" returnTypeFixed="true"/>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tngdb8q4Eeug1p9s8WupCA" key="outputType"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Tngdb8q4Eeug1p9s8WupCA" key="outputType">
+                <expression xmi:type="expression:Expression" xmi:id="_Fzz90MrVEeuepLWy70k04g" name="outputType" returnTypeFixed="true"/>
+              </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TngdcMq4Eeug1p9s8WupCA" key="wizardMode">
                 <expression xmi:type="expression:Expression" xmi:id="_Tngdccq4Eeug1p9s8WupCA" name="true" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
@@ -617,7 +620,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_E7NSEck5EeulwfSep-xH3w" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_fW8FVMZgEeunJYHbo2aFyQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_xoFxkcq3Eeug1p9s8WupCA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_r7YnQMrUEeuepLWy70k04g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_fW8FVsZgEeunJYHbo2aFyQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_fW8FV8ZgEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
