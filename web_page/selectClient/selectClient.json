@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "selectClient",
   "name" : "selectClient",
-  "lastUpdate" : 1622566349664,
+  "lastUpdate" : 1623435527384,
   "rows" : [
     [
       {
@@ -222,7 +222,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Client"
+                          "value" : "Cliente"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -302,7 +302,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Client"
+                                "value" : "Cliente"
                               },
                               "labelPosition" : {
                                 "type" : "constant",

@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_fW8FQMZgEeunJYHbo2aFyQ" name="ChargesAndComplaints" author="andre" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_fW8FQcZgEeunJYHbo2aFyQ" name="Charges and Complaint Management">
       <elements xmi:type="process:Lane" xmi:id="_fW8FQsZgEeunJYHbo2aFyQ" name="Funcionário Administrativo" actor="_u4YZ4MZgEeunJYHbo2aFyQ">
-        <elements xmi:type="process:StartEvent" xmi:id="_fW8FQ8ZgEeunJYHbo2aFyQ" name="Received Complainment" outgoing="_nxw0oMehEeuGqdNPMT2hLA">
+        <elements xmi:type="process:StartEvent" xmi:id="_fW8FQ8ZgEeunJYHbo2aFyQ" name="Received Complaint" outgoing="_nxw0oMehEeuGqdNPMT2hLA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_fW8FRMZgEeunJYHbo2aFyQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_fW8FRcZgEeunJYHbo2aFyQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_fW8FRsZgEeunJYHbo2aFyQ" name="" content="" returnTypeFixed="true"/>
@@ -485,7 +485,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_iY7GY8nTEeup4OL0CehCIw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iY7GZMnTEeup4OL0CehCIw" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_iY7GZcnTEeup4OL0CehCIw" name="cliente@cliente.com" content="cliente@cliente.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_iY7GZcnTEeup4OL0CehCIw" name="to()" content="client.email ?: &quot;cliente@prestaser.com&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cK0KIMrXEeuaeM3KWOaS0Q" name="client" dataType="_fW8FdMZgEeunJYHbo2aFyQ" className="com.prestaser.model.Client"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_iY7GZsnTEeup4OL0CehCIw" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_iY7GZ8nTEeup4OL0CehCIw" content="" returnTypeFixed="true"/>
@@ -620,7 +622,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_E7NSEck5EeulwfSep-xH3w" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_fW8FVMZgEeunJYHbo2aFyQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_r7YnQMrUEeuepLWy70k04g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_gBjLIMrXEeuaeM3KWOaS0Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_fW8FVsZgEeunJYHbo2aFyQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_fW8FV8ZgEeunJYHbo2aFyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "fillIntervention",
   "name" : "fillIntervention",
-  "lastUpdate" : 1622819090516,
+  "lastUpdate" : 1623435641463,
   "rows" : [
     [
       {
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Intervention"
+                    "value" : "Intervenção"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -238,7 +238,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Intervention Date"
+                          "value" : "Data da Intervenção"
                         },
                         "type" : {
                           "type" : "constant"
@@ -338,7 +338,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Description"
+                          "value" : "Descrição"
                         },
                         "labelPosition" : {
                           "type" : "constant",

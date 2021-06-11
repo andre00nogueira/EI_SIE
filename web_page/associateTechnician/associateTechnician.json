@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "associateTechnician",
   "name" : "associateTechnician",
-  "lastUpdate" : 1623419445230,
+  "lastUpdate" : 1623435615754,
   "rows" : [
     [
       {
@@ -179,7 +179,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -229,7 +229,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -289,7 +289,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Request Description"
+                          "value" : "Descrição do Pedido"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -341,7 +341,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Client"
+                          "value" : "Cliente"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -401,7 +401,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Technician"
+                          "value" : "Técnico"
                         },
                         "labelPosition" : {
                           "type" : "constant",

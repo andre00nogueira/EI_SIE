@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "fillRequest",
   "name" : "fillRequest",
-  "lastUpdate" : 1622571634275,
+  "lastUpdate" : 1623435572981,
   "rows" : [
     [
       {
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Request Input"
+                    "value" : "Pedido de Serviço"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -238,7 +238,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Request Date"
+                          "value" : "Data do Pedido"
                         },
                         "type" : {
                           "type" : "constant"
@@ -338,7 +338,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Description"
+                          "value" : "Descrição"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -382,7 +382,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Client"
+                          "value" : "Cliente"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -453,7 +453,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Name"
+                                "value" : "Nome"
                               },
                               "labelPosition" : {
                                 "type" : "constant",
