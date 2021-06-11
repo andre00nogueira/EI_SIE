@@ -135,6 +135,66 @@
               <operator xmi:type="expression:Operator" xmi:id="_8NaAf7-0EeuG3vYWfjoMXw" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
+          <connectors xmi:type="process:Connector" xmi:id="_1FHEUMqyEeug1p9s8WupCA" name="getemail" definitionId="salesforce-querysobjects" event="ON_FINISH" definitionVersion="1.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_1FHrYMqyEeug1p9s8WupCA" definitionId="salesforce-querysobjects" version="1.0.1" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrYcqyEeug1p9s8WupCA" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrYsqyEeug1p9s8WupCA" name="andre@ipl.com" content="andre@ipl.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrY8qyEeug1p9s8WupCA" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrZMqyEeug1p9s8WupCA" name="janela2012" content="janela2012" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrZcqyEeug1p9s8WupCA" key="securityToken">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrZsqyEeug1p9s8WupCA" name="78HnE36tf0FEPzNFPjz7OEe2" content="78HnE36tf0FEPzNFPjz7OEe2" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrZ8qyEeug1p9s8WupCA" key="authEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHraMqyEeug1p9s8WupCA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHracqyEeug1p9s8WupCA" key="serviceEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrasqyEeug1p9s8WupCA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHra8qyEeug1p9s8WupCA" key="restEndpoint">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrbMqyEeug1p9s8WupCA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrbcqyEeug1p9s8WupCA" key="proxyHost">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrbsqyEeug1p9s8WupCA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrb8qyEeug1p9s8WupCA" key="proxyPort">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrcMqyEeug1p9s8WupCA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrccqyEeug1p9s8WupCA" key="proxyUsername">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrcsqyEeug1p9s8WupCA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrc8qyEeug1p9s8WupCA" key="proxyPassword">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrdMqyEeug1p9s8WupCA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrdcqyEeug1p9s8WupCA" key="connectionTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHrdsqyEeug1p9s8WupCA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrd8qyEeug1p9s8WupCA" key="readTimeout">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHreMqyEeug1p9s8WupCA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_1FHrecqyEeug1p9s8WupCA" key="query">
+                <expression xmi:type="expression:Expression" xmi:id="_1FHresqyEeug1p9s8WupCA" name="&lt;pattern-expression>" content="SELECT email FROM Contact WHERE accountId = '${client.clientId}'" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_BJ9WQMqzEeug1p9s8WupCA" name="client.clientId" content="client.clientId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_BJ9WQcqzEeug1p9s8WupCA" name="client" content="client" type="TYPE_VARIABLE" returnType="com.prestaser.model.Client">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BJ9WQsqzEeug1p9s8WupCA" name="client" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_Qcg6UMqzEeug1p9s8WupCA">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_Qcg6UcqzEeug1p9s8WupCA" name="client" content="client" type="TYPE_VARIABLE" returnType="com.prestaser.model.Client">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Qcg6UsqzEeug1p9s8WupCA" name="client" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_Qcg6U8qzEeug1p9s8WupCA" name="newScript()" content="import com.prestaser.model.Client&#xD;&#xA;import com.sforce.soap.partner.sobject.SObject&#xD;&#xA;&#xD;&#xA;SObject[] all = queryResults.getRecords()&#xD;&#xA;&#xD;&#xA;for  (SObject s in all){&#xD;&#xA;&#x9;return s.getField(&quot;Email&quot;)&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="definition:Output" xmi:id="_Qcg6VMqzEeug1p9s8WupCA" name="queryResults" type="com.sforce.soap.partner.QueryResult"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_Qcg6VcqzEeug1p9s8WupCA" type="JAVA_METHOD" expression="setEmail">
+                <inputTypes>java.lang.String</inputTypes>
+              </operator>
+            </outputs>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_8NaAjr-0EeuG3vYWfjoMXw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_8NaAj7-0EeuG3vYWfjoMXw" name="client" content="client" type="TYPE_VARIABLE" returnType="com.prestaser.model.Client">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3DdOkL-1EeuG3vYWfjoMXw" name="client" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
@@ -413,7 +473,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_sE-6QcOkEeuPs55QMps5-w" name="true" content="true" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_noUVdL44Eeuk4pNB4Zwu1A">
-        <targetForm xmi:type="expression:Expression" xmi:id="_O_rNMMkkEeuKwPjpVdmTLg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_DEqS8Mq0Eeug1p9s8WupCA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_noUVdr44Eeuk4pNB4Zwu1A">
         <targetForm xmi:type="expression:Expression" xmi:id="_noUVd744Eeuk4pNB4Zwu1A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -580,7 +640,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_R1ShQ8MKEeuOueima6B9Dw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_R1ShRMMKEeuOueima6B9Dw" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_R1ShRcMKEeuOueima6B9Dw" name="teste@teste.com" content="teste@teste.com" interpreter="GROOVY" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_R1ShRcMKEeuOueima6B9Dw" name="to()" content="request.technician.toLowerCase() + &quot;.tecnico@prestaser.com&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tAFTYMqxEeug1p9s8WupCA" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_R1ShSMMKEeuOueima6B9Dw" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_R1ShScMKEeuOueima6B9Dw" content="" returnTypeFixed="true"/>
@@ -781,7 +843,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_p2Rk88VCEeuprOBdJRxGOw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_p2Rk9MVCEeuprOBdJRxGOw" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_p2Rk9cVCEeuprOBdJRxGOw" name="no-reply@prestaser.com" content="no-reply@prestaser.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_p2Rk9cVCEeuprOBdJRxGOw" name="ccep_tecnicos@prestaser.com" content="ccep_tecnicos@prestaser.com" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_p2Rk9sVCEeuprOBdJRxGOw" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_p2Rk98VCEeuprOBdJRxGOw" content="" returnTypeFixed="true"/>
@@ -948,13 +1010,15 @@
                 <expression xmi:type="expression:Expression" xmi:id="_EYmZg8knEeuKwPjpVdmTLg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EYmZhMknEeuKwPjpVdmTLg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_EYmZhcknEeuKwPjpVdmTLg" name="cliente@cliente.pt" content="cliente@cliente.pt" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_EYmZhcknEeuKwPjpVdmTLg" name="to()" content="request.client.email ?: &quot;cliente@prestaser.com&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZGHNYMqzEeug1p9s8WupCA" name="request" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Request"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EYmZhsknEeuKwPjpVdmTLg" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_EYmZh8knEeuKwPjpVdmTLg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EYmZiMknEeuKwPjpVdmTLg" key="cc">
-                <expression xmi:type="expression:Expression" xmi:id="_EYmZicknEeuKwPjpVdmTLg" name="gservico@prestaser.com" content="gservico@prestaser.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_EYmZicknEeuKwPjpVdmTLg" name="ccep_tecnicos@prestaser.com" content="ccep_tecnicos@prestaser.com" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EYmZisknEeuKwPjpVdmTLg" key="subject">
                 <expression xmi:type="expression:Expression" xmi:id="_EYmZi8knEeuKwPjpVdmTLg" name="Intervenção" content="Intervenção" returnTypeFixed="true"/>
@@ -1022,7 +1086,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZSkAocZjEeunJYHbo2aFyQ" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_sPkFz8L4Eeu_fIKJc27m8Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_N_b4MMkkEeuKwPjpVdmTLg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_DP5SkMq0Eeug1p9s8WupCA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_sPkF0cL4Eeu_fIKJc27m8Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_sPkF0sL4Eeu_fIKJc27m8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

@@ -18,7 +18,9 @@
       <lastName>GServico</lastName>
       <manager></manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>cesar.gservico@prestaser.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
@@ -27,7 +29,9 @@
       <lastName>Tecnico</lastName>
       <manager>cesar.gservico</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>alexandre.tecnico@prestaser.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
@@ -36,7 +40,9 @@
       <lastName>GConta</lastName>
       <manager>cesar.gservico</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>andre.gconta@prestaser.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
@@ -45,7 +51,9 @@
       <lastName>FuncAdministrativo</lastName>
       <manager></manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>solange.funcadmin@prestaser.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
@@ -54,7 +62,9 @@
       <lastName>FuncFinanceiro</lastName>
       <manager>miguel.administrator</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>jorge.funcfinan@prestaser.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>

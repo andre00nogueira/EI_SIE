@@ -61,7 +61,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_sKiEg8iNEeucmIJr3xuyqg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_sKiEhMiNEeucmIJr3xuyqg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_sKiEhciNEeucmIJr3xuyqg" name="gestor.conta@prestaser.com" content="gestor.conta@prestaser.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_sKiEhciNEeucmIJr3xuyqg" name="ccepgc@prestaser.com" content="ccepgc@prestaser.com" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_sKiEhsiNEeucmIJr3xuyqg" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_sKiEh8iNEeucmIJr3xuyqg" content="" returnTypeFixed="true"/>
@@ -269,7 +269,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_5MN7c8k4EeulwfSep-xH3w" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5MN7dMk4EeulwfSep-xH3w" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_5MN7dck4EeulwfSep-xH3w" name="gestor.servico@prestaser.com" content="gestor.servico@prestaser.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_5MN7dck4EeulwfSep-xH3w" name="cesar.gservico@prestaser.com" content="cesar.gservico@prestaser.com" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5MN7dsk4EeulwfSep-xH3w" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_5MN7d8k4EeulwfSep-xH3w" content="" returnTypeFixed="true"/>
