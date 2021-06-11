@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "validateInterventions",
   "name" : "validateInterventions",
-  "lastUpdate" : 1623437640725,
+  "lastUpdate" : 1623438035973,
   "rows" : [
     [
       {
@@ -158,7 +158,7 @@
                   },
                   "content" : {
                     "type" : "expression",
-                    "value" : "intervention_query"
+                    "value" : "interventions"
                   },
                   "columnsKey" : {
                     "type" : "constant",
@@ -468,6 +468,13 @@
       "type" : "businessdata",
       "value" : [
         "{\"displayValue\":\"find [com.prestaser.model.Intervention]\",\"businessObjectName\":\"Intervention\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.prestaser.model.Intervention\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "interventions" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.interventions_ref.link}}"
       ],
       "exposed" : false
     }
