@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Reclamacoes",
   "name" : "Reclamacoes",
-  "lastUpdate" : 1623436265465,
+  "lastUpdate" : 1623442717561,
   "rows" : [
     [
       {
@@ -85,7 +85,7 @@
                 },
                 "target" : {
                   "type" : "constant",
-                  "value" : "_self"
+                  "value" : "_parent"
                 },
                 "appToken" : {
                   "type" : "constant"

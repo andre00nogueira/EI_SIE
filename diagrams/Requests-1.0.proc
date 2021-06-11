@@ -129,8 +129,8 @@
               <leftOperand xmi:type="expression:Expression" xmi:id="_8NaAe7-0EeuG3vYWfjoMXw" name="clients" content="clients" type="TYPE_VARIABLE" returnType="java.util.List">
                 <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8NaAfL-0EeuG3vYWfjoMXw" name="clients" multiple="true" dataType="_noUVlL44Eeuk4pNB4Zwu1A" className="com.prestaser.model.Client"/>
               </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_8NaAfb-0EeuG3vYWfjoMXw" name="getClientAccountsScript()" content="import com.prestaser.model.Client&#xD;&#xA;import com.sforce.soap.partner.sobject.SObject&#xD;&#xA;&#xD;&#xA;ArrayList&lt;Client> accs = new ArrayList()&#xD;&#xA;&#xD;&#xA;SObject[] all = queryResults.getRecords()&#xD;&#xA;&#xD;&#xA;for  (SObject s in all){&#xD;&#xA;&#x9;Client a = new Client()&#xD;&#xA;&#x9;a.clientId = s.getId()&#xD;&#xA;&#x9;a.name = s.getField(&quot;Name&quot;)&#xD;&#xA;&#x9;a.hasValidContract = s.getField(&quot;Active__c&quot;)&#xD;&#xA;&#x9;accs.add(a)&#xD;&#xA;}&#xD;&#xA;return accs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-                <referencedElements xmi:type="definition:Output" xmi:id="__LqIoMOCEeu9a8tOSYgMrA" name="queryResults" type="com.sforce.soap.partner.QueryResult"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_8NaAfb-0EeuG3vYWfjoMXw" name="getClientAccountsScript()" content="import com.prestaser.model.Client&#xD;&#xA;import com.sforce.soap.partner.sobject.SObject&#xD;&#xA;&#xD;&#xA;ArrayList&lt;Client> accs = new ArrayList()&#xD;&#xA;&#xD;&#xA;SObject[] all = queryResults.getRecords()&#xD;&#xA;&#xD;&#xA;for  (SObject s in all){&#xD;&#xA;&#x9;Client a = new Client()&#xD;&#xA;&#x9;a.clientId = s.getId()&#xD;&#xA;&#x9;a.name = s.getField(&quot;Name&quot;)&#xD;&#xA;&#x9;if(s.getField(&quot;Active__c&quot;)==&quot;Yes&quot;){&#xD;&#xA;&#x9;&#x9;a.hasValidContract = true&#xD;&#xA;&#x9;}else{&#xD;&#xA;&#x9;&#x9;a.hasValidContract = false&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;accs.add(a)&#xD;&#xA;}&#xD;&#xA;return accs" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+                <referencedElements xmi:type="definition:Output" xmi:id="_qFPnMMrjEeuaeM3KWOaS0Q" name="queryResults" type="com.sforce.soap.partner.QueryResult"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_8NaAf7-0EeuG3vYWfjoMXw" type="ASSIGNMENT"/>
             </outputs>
@@ -473,7 +473,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_sE-6QcOkEeuPs55QMps5-w" name="true" content="true" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_noUVdL44Eeuk4pNB4Zwu1A">
-        <targetForm xmi:type="expression:Expression" xmi:id="_e4hGgMrXEeuaeM3KWOaS0Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_kLIOoMriEeuaeM3KWOaS0Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_noUVdr44Eeuk4pNB4Zwu1A">
         <targetForm xmi:type="expression:Expression" xmi:id="_noUVd744Eeuk4pNB4Zwu1A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1086,7 +1086,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZSkAocZjEeunJYHbo2aFyQ" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_sPkFz8L4Eeu_fIKJc27m8Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_fknXgMrXEeuaeM3KWOaS0Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_k0LysMriEeuaeM3KWOaS0Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_sPkF0cL4Eeu_fIKJc27m8Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_sPkF0sL4Eeu_fIKJc27m8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
