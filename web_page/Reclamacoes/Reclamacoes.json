@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Reclamacoes",
   "name" : "Reclamacoes",
-  "lastUpdate" : 1623359561703,
+  "lastUpdate" : 1623436265465,
   "rows" : [
     [
       {
@@ -56,7 +56,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Reclamações"
+                  "value" : "Nova Reclamação"
                 },
                 "type" : {
                   "type" : "constant",
@@ -143,7 +143,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Complaint"
+                        "value" : "Reclamações"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -173,7 +173,7 @@
                       "headers" : {
                         "type" : "constant",
                         "value" : [
-                          "Description"
+                          "Descrições"
                         ]
                       },
                       "allowHtml" : {
@@ -215,6 +215,14 @@
                         "value" : "complaints"
                       },
                       "zebraStriping" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "striped" : {
                         "type" : "constant",
                         "value" : true
                       }
@@ -324,7 +332,7 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Description"
+                              "value" : "Descrição"
                             },
                             "placeholder" : {
                               "type" : "constant"
@@ -344,6 +352,24 @@
                             "required" : {
                               "type" : "constant",
                               "value" : false
+                            },
+                            "minLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "maxLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "min" : {
+                              "type" : "constant"
+                            },
+                            "max" : {
+                              "type" : "constant"
+                            },
+                            "step" : {
+                              "type" : "constant",
+                              "value" : 1
                             }
                           },
                           "reference" : "52d04a0b-01f7-4baa-a8e3-5364235d465b",
@@ -388,7 +414,7 @@
                                   },
                                   "text" : {
                                     "type" : "interpolation",
-                                    "value" : "Client"
+                                    "value" : "Cliente"
                                   },
                                   "alignment" : {
                                     "type" : "constant",
@@ -504,7 +530,7 @@
                                         },
                                         "label" : {
                                           "type" : "interpolation",
-                                          "value" : "Client Id"
+                                          "value" : "Id Cliente"
                                         },
                                         "placeholder" : {
                                           "type" : "constant"
@@ -524,6 +550,24 @@
                                         "required" : {
                                           "type" : "constant",
                                           "value" : false
+                                        },
+                                        "minLength" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "maxLength" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "min" : {
+                                          "type" : "constant"
+                                        },
+                                        "max" : {
+                                          "type" : "constant"
+                                        },
+                                        "step" : {
+                                          "type" : "constant",
+                                          "value" : 1
                                         }
                                       },
                                       "reference" : "c5961bac-013e-4d02-a590-99ec46ea25a3",
@@ -568,7 +612,7 @@
                                         },
                                         "label" : {
                                           "type" : "interpolation",
-                                          "value" : "Name"
+                                          "value" : "Nome"
                                         },
                                         "placeholder" : {
                                           "type" : "constant"
@@ -588,6 +632,24 @@
                                         "required" : {
                                           "type" : "constant",
                                           "value" : false
+                                        },
+                                        "minLength" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "maxLength" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "min" : {
+                                          "type" : "constant"
+                                        },
+                                        "max" : {
+                                          "type" : "constant"
+                                        },
+                                        "step" : {
+                                          "type" : "constant",
+                                          "value" : 1
                                         }
                                       },
                                       "reference" : "51435e1b-313d-4a39-95c7-c0ffbf867b43",
@@ -624,7 +686,7 @@
                                         },
                                         "label" : {
                                           "type" : "interpolation",
-                                          "value" : "Has Valid Contract"
+                                          "value" : "Contrato Válido"
                                         },
                                         "dimension" : {
                                           "type" : "constant",
@@ -633,6 +695,10 @@
                                         "value" : {
                                           "type" : "variable",
                                           "value" : "complaints_client.hasValidContract"
+                                        },
+                                        "required" : {
+                                          "type" : "constant",
+                                          "value" : false
                                         }
                                       },
                                       "reference" : "cc82d0e0-aae3-480e-95fd-7283c2399762",
